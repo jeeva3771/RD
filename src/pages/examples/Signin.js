@@ -36,7 +36,7 @@ export default () => {
                       <InputGroup.Text>
                         <FontAwesomeIcon icon={faEnvelope} />
                       </InputGroup.Text>
-                      <Form.Control autoFocus required type="email" placeholder="example@company.com" />
+                      <Form.Control autoFocus required type="email" placeholder="example@company.com" value="rd@domain.com" />
                     </InputGroup>
                   </Form.Group>
                   <Form.Group>
@@ -48,11 +48,11 @@ export default () => {
                         </InputGroup.Text>
                         <Form.Control required
                         type={showPassword ? "text" : "password"}
-                        placeholder="Password" />
+                        placeholder="Password" value="rd#123"/>
                       </InputGroup>
                     </Form.Group>
                     <div className="d-flex justify-content-between align-items-center mb-4">
-                      <Form.Check type="checkbox">
+                      <Form.Check type="checkbox" >
                         <FormCheck.Input id="defaultCheck5" className="me-2" onChange={togglePassword}/>
                         <FormCheck.Label htmlFor="defaultCheck5" className="mb-0" >Show password</FormCheck.Label>
                       </Form.Check>

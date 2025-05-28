@@ -48,7 +48,7 @@ export const PageVisitsTable = () => {
       <Card.Header>
         <Row className="align-items-center">
           <Col>
-            <h5>Page visits</h5>
+            <h5 className="clr-blue">Page visits</h5>
           </Col>
           <Col className="text-end">
             <Button variant="secondary" size="sm">See all</Button>

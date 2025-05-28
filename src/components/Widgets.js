@@ -78,13 +78,13 @@ export const CounterWidget = (props) => {
             </div>
             <div className="d-sm-none">
               <h5>{category}</h5>
-              <h3 className="mb-1">{title}</h3>
+              <h3 className="mb-1 ">{title}</h3>
             </div>
           </Col>
           <Col xs={12} xl={7} className="px-xl-0">
             <div className="d-none d-sm-block">
-              <h5 className="clr-blue font-bold">{category}</h5>
-              <h3 className="mb-1">{title}</h3>
+              <h5 className="clr-blue font-extrabold">{category}</h5>
+              <h3 className="mb-1 clr-black">{title}</h3>
             </div>
             <small>{period}, <FontAwesomeIcon icon={faGlobeEurope} size="xs" /> WorldWide</small>
             <div className="small mt-2">
@@ -112,11 +112,11 @@ export const CircleChartWidget = (props) => {
             <CircleChart series={series} />
           </Col>
           <Col xs={12} xl={7} className="px-xl-0">
-            <h5 className="mb-3">{title}</h5>
+            <h5 className="mb-3 clr-blue">{title}</h5>
 
             {data.map(d => (
               <h6 key={`circle-element-${d.id}`} className="fw-normal text-gray">
-                <FontAwesomeIcon icon={d.icon} className={`icon icon-xs text-${d.color} w-20 me-1`} />
+                <FontAwesomeIcon icon={d.icon} className={`icon icon-xs text-${d.color} w-20 me-1 clr-black`} />
                 {` ${d.label} `}{`${d.value}%`}
               </h6>
             ))}
@@ -138,8 +138,8 @@ export const BarChartWidget = (props) => {
     <Card border="light" className="shadow-sm">
       <Card.Body className="d-flex flex-row align-items-center flex-0 border-bottom">
         <div className="d-block">
-          <h6 className="fw-normal text-gray mb-2">{title}</h6>
-          <h3>{value}</h3>
+          <h5 className="fw-normal mb-2 clr-blue">{title}</h5>
+          <h3 className="clr-black">{value}</h3>
           <small className="mt-2">
             <FontAwesomeIcon icon={percentageIcon} className={`${percentageColor} me-1`} />
             <span className={`${percentageColor} fw-bold`}>
