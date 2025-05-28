@@ -59,7 +59,7 @@ export default () => {
                       <Card.Link className="small text-end">Lost password?</Card.Link>
                     </div>
                   </Form.Group>
-                  <Button variant="primary" type="submit" className="w-100" onClick={Routes.Signup.path}>
+                  <Button variant="primary" type="submit" className="w-100" as={Link} to={Routes.DashboardOverview.path}>
                     Sign in
                   </Button>
                 </Form>

@@ -10,6 +10,7 @@ import Profile1 from "../assets/img/team/profile-picture-1.jpg";
 import ProfileCover from "../assets/img/profile-cover.jpg";
 
 import teamMembers from "../data/teamMembers";
+import '../App.css'
 
 
 export const ProfileCardWidget = () => {
@@ -82,7 +83,7 @@ export const CounterWidget = (props) => {
           </Col>
           <Col xs={12} xl={7} className="px-xl-0">
             <div className="d-none d-sm-block">
-              <h5>{category}</h5>
+              <h5 className="clr-blue font-bold">{category}</h5>
               <h3 className="mb-1">{title}</h3>
             </div>
             <small>{period}, <FontAwesomeIcon icon={faGlobeEurope} size="xs" /> WorldWide</small>
